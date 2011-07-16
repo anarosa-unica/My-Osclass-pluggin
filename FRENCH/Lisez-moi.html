@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr-FR">
+<head>
+<meta charset="UTF-8" />
+<title>Installation langue fran&ccedil;aise OSClass version 2.1.1</title>
+<link rel="stylesheet" type="text/css" media="all" href="http://osclass.org/wp-content/themes/osclass/style.css" />
+<link rel='stylesheet' id='sharedaddy-css'  href='http://osclass.org/wp-content/plugins/jetpack/modules/sharedaddy/sharing.css?ver=3.1.1' type='text/css' media='all' />
+<style type="text/css" media="screen">
+.ribbon {
+  background-color: #a00;
+  overflow: hidden;
+  /* top right corner */
+  position: absolute;
+  right: -3em;
+  top: 2.5em;
+  /* 45 deg ccw rotation */
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  /* shadow */
+  -moz-box-shadow: 0 0 1em #888;
+  -webkit-box-shadow: 0 0 1em #888;
+}
+.ribbon a {
+  border: 1px solid #faa;
+  color: #fff;
+  display: block;
+  font: bold 100% 'Helvetiva Neue', Helvetica, Arial, sans-serif;
+  margin: 0.05em 0 0.075em 0;
+  padding: 0.5em 3.5em;
+  text-align: center;
+  text-decoration: none;
+  /* shadow */
+  text-shadow: 0 0 0.5em #444;
+}
+</style>
+
+</head>
+<body class="home page page-id-110 page-template page-template-home-page-php">
+<div class="ribbon">
+  <a href="https://github.com/keny10/My-Osclass-pluggin" rel="me">Fork me on GitHub</a>
+</div>
+<div id="wrapper" class="hfeed">
+	<div id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+								<a href="http://osclass.org/fr" title="OSClass" rel="home"><img src="http://osclass.org/wp-content/uploads/2010/09/logo.png" alt="" /></a>
+								</div><!-- #branding -->
+
+			<div id="access" role="navigation">
+			  				<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+				                                <div style="float: left; width: auto ! important;">
+                                    <div class="menu"><ul><li class="current_page_item"><A HREF="#">Traduction française</A></li></ul></div>
+                                </div>
+                                
+			</div><!-- #access -->
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+	<div id="main">
+
+		<div id="container" class="home-page">
+			<div id="content" role="main" style="margin-right: 20px;">
+
+
+				<div id="post-110" class="post-110 page type-page status-publish hentry">
+					<!--<h1 class="entry-title">Home</h1>-->
+					<div class="entry-content">
+					<H1>Lisez ce qui suis pour comprendre comment installer la langue fran&ccedil;aise pour OSClass 2.1.1</H1>
+        <P><OL>
+            <LI>Pour installer la langue fran&ccedil;aise connectez-vous au panneau de configuration de votre installation de OSClass</LI>
+            <LI>Allez sou l'onglet <I>Languages</I> (Langue) ensuite cliquez sur <I>add a new language</I> (ajouter une langue) par la suite envoyer le fichier OSClass_2_1_1_FR.zip</LI>
+            <LI>Allez maintenant sur <I>Tools</I> (Outils) et par la suite cliquez sur <I>import data</I> (Import&eacute; des donn&eacute;es) et envoyez le fichier OSClass_2_1_1_alerte.sql (Ceci traduire toutes les alerte en fran&ccedil;ais)</LI>
+        </OL></P>
+
+        <H1>Orthographe</H1>
+        <P>Bien que je m'&eacute;fforce d'&eacute;crire un fran&ccedil;ais sans fautes je suis conscient que je suis loin d'&ecirc;tre parfait donc en aucun temps je certifie que toutes les traductions sont sans aucune fautes d'orthographe ou dans une syntaxe correcte. Si vous trouvez une faute ou une modification envoyez-la moi par courriel &agrave; <A HREF="mailto:keny10@gmail.com">keny10@gmail.com</A> et j'apporterai les modifications.<br />Prenez note &eacute;galement que je suis Qu&eacute;b&eacute;cois donc certains termes peuvent de pas correspondent pour la France si tel est le cas &eacute;crivez-moi et nous en discuterons</P>
+
+        <H1>Panneau de configuration de OSClass n'est pas en fran&ccedil;ais !!!!</H1>
+        <P>Sous OSClass 2.1.1 m&ecirc;me apr&egrave;s avoir choisi le fran&ccedil;ais comme langue dans le panneau de configuration la langue restera l'anglais.
+        <br />Pour y rem&eacute;dier ex&eacute;cuter cette commande sql dans phpmyadmin 
+		<pre style="font-size:9px;">UPDATE  `osclass`.`oc_t_preference` SET  `s_value` =  'fr_FR' WHERE  `oc_t_preference`.`s_section` =  'osclass' AND  `oc_t_preference`.`s_name` =  'admin_language' LIMIT 1 ;</pre></P>
+
+        <H1>Est-ce que cette traduction fonctionne avec OSClass 2.2 et plus ?</H1>
+        <P>Elle devrait, mais certain texte pourrait de pas &ecirc;tre traduit vous avez donc 2 choix les traduire ou attendre que je termine la traduction inutile de m'envoyez un courriel !</P>
+
+        <H1>Comment modifier la traduction ?</H1>
+		Vous devez modifier les fichier .po dans le r&eacute;pertoire de la langue absolument avec l'editeur poedit vous pouvez le t&eacute;l&eacute;charger gratuitement &agrave; cette adresse : <A HREF="http://www.poedit.net">http://www.poedit.net</A> Utilisez google pour savoir comment l'utiliser !
+
+        <H1>Qui suis-je ?</H1>
+        <P>Je suis Richard Martin alias keny sur le forum je m'occupe de cr&eacute;e des modules et faire des traductions vous pouvez r&eacute;cup&eacute;rer mon travail gratuitement sur GitHub a cette adresse : <A HREF="https://github.com/keny10/My-Osclass-pluggin">https://github.com/keny10/My-Osclass-pluggin</A> Changer de branche pour s&eacute;lectionner les modules ou les langues</P>
+
+        <H1>Aucune garantie sur tout donc vous installez tous mon travail &agrave; vos propres risques !</H1>
+						
+						</div><!-- .entry-content -->
+				</div><!-- #post-## -->
+
+				
+			
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+	</div><!-- #main -->
+
+	
+</body>
+</html>
+
